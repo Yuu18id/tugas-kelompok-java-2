@@ -41,11 +41,9 @@ public class Buku {
     }
 
     // Methods tampilkan informasi buku
-    public void tampilkanInfo(String judul, String penulis, int tahunTerbit) {
-        Buku buku = new Buku(judul, penulis, tahunTerbit);
-
-        System.out.println("Judul Buku      : " + buku.getJudul());
-        System.out.println("Penulis         : " + buku.getPenulis());
-        System.out.println("Tahun Terbit    : " + buku.getTahunTerbit());
+    public void tampilkanInfo() {
+        System.out.println("Judul Buku      : " + this.judul);
+        System.out.println("Penulis         : " + this.penulis);
+        System.out.println("Tahun Terbit    : " + this.tahunTerbit);
     }
 }
