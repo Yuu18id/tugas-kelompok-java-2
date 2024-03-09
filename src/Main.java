@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DaftarBuku daftarBuku = new DaftarBuku();
-        daftarBuku.daftarBuku();
 
         // Menambahkan beberapa buku ke dalam daftar
         BukuFiksi bukuFiksi = new BukuFiksi("Harry Potter", "J.K. Rowling", 2001, "Fantasy");

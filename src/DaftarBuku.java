@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class DaftarBuku {
     private ArrayList<Buku> daftarBuku;
 
-    public void daftarBuku() {
+    public DaftarBuku() {
         this.daftarBuku = new ArrayList<>();
     }
 
