@@ -11,6 +11,6 @@ public class BukuNonFiksi extends Buku {
   @Override
   public void tampilkanInfo() {
     super.tampilkanInfo();
-    System.out.println("Subjek: " + subjek);
+    System.out.println("Subjek\t\t: " + subjek);
   }
 }

@@ -10,6 +10,6 @@ public class BukuFiksi extends Buku {
     @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();
-        System.out.println("Genre: " + genre);
+        System.out.println("Genre\t\t: " + genre);
     }
 }

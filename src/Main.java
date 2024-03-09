@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DaftarBuku daftarBuku = new DaftarBuku();
+        daftarBuku.daftarBuku();
 
         // Menambahkan beberapa buku ke dalam daftar
         BukuFiksi bukuFiksi = new BukuFiksi("Harry Potter", "J.K. Rowling", 2001, "Fantasy");
@@ -14,7 +15,8 @@ public class Main {
 
         int pilihan;
         do {
-            System.out.println("\nMenu:");
+            System.out.println("\nSISTEM PUSTAKA ONLINE - KELOMPOK 5");
+            System.out.println("Menu:");
             System.out.println("1. Tambah Buku");
             System.out.println("2. Hapus Buku");
             System.out.println("3. Cari Buku");
@@ -27,28 +29,31 @@ public class Main {
 
             switch (pilihan) {
                 case 1:
-                    System.out.print("Judul: ");
+                    System.out.print("Judul\t\t: ");
                     String judul = scanner.nextLine();
-                    System.out.print("Penulis: ");
+                    System.out.print("Penulis\t\t: ");
                     String penulis = scanner.nextLine();
-                    System.out.print("Tahun Terbit: ");
+                    System.out.print("Tahun Terbit\t: ");
                     int tahunTerbit = scanner.nextInt();
                     scanner.nextLine(); // Membersihkan newline
 
                     System.out.println("Jenis Buku (1. Fiksi / 2. Non-Fiksi): ");
+                    System.out.print("Pilihan: ");
                     int jenisBuku = scanner.nextInt();
                     scanner.nextLine(); // Membersihkan newline
 
                     if (jenisBuku == 1) {
-                        System.out.print("Genre: ");
+                        System.out.print("Genre\t\t: ");
                         String genre = scanner.nextLine();
                         BukuFiksi bukuBaruFiksi = new BukuFiksi(judul, penulis, tahunTerbit, genre);
                         daftarBuku.tambahBuku(bukuBaruFiksi);
+                        System.out.println("Buku berhasil ditambahkan!");
                     } else if (jenisBuku == 2) {
-                        System.out.print("Topik: ");
+                        System.out.print("Topik\t\t: ");
                         String topik = scanner.nextLine();
                         BukuNonFiksi bukuBaruNonFiksi = new BukuNonFiksi(judul, penulis, tahunTerbit, topik);
                         daftarBuku.tambahBuku(bukuBaruNonFiksi);
+                        System.out.println("Buku berhasil ditambahkan!");
                     } else {
                         System.out.println("Pilihan jenis buku tidak valid.");
                     }
